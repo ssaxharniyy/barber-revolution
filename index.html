@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Revolution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Prices</a>
+            </nav>
+            <div class="logo">
+                <img src="img/icon_cut.svg" class="logo-icon" alt="Scissors Icon">
+                <h1>Barber</h1>
+                <p> Revolution</p>
+            </div>
+            <nav class="nav-right">
+                <a href="#">Contact</a>
+                <a href="#">Directions</a>
+                <a href="#">News</a>
+            </nav>
+            <button class="burger-menu" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Prices</a>
+            <a href="#">Contact</a>
+            <a href="#">Directions</a>
+            <a href="#">News</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="background1">
+            <div class="background1-text">
+                <h1>⎯ REVOLUTION ⎯</h1> <hr class="hr1"/>
+                <h2>BARBER SHOP</h2>
+                <h3>ESTABLISHED IN 1980</h3><hr class="hr2"/>
+                <img src="img/icon_cut.svg">
+            </div>
+        </div>
+
+        <div class="background2">
+            <div class="block block1">
+                <img src="img/block2.1.jpg" alt="Beard Shaving">
+                <h1>beard shaving</h1>
+                <p>Enjoy a classic shave. Our barbers use old-school methods. Feel the difference with each stroke. A timeless ritual awaits.</p>
+            </div>
+            <div class="block block2">
+                <img src="img/block2.2.jpg" alt="Hair Cutting">
+                <h1>hair cutting</h1>
+                <p>Get a sharp, fresh cut. We tailor styles to your vibe. Precision and care in every snip. Walk out feeling confident.</p>
+            </div>
+            <div class="block block3">
+                <img src="img/block2.3.jpg" alt="Online Appointment">
+                <h1>online appointment</h1>
+                <p>Book your slot with ease. Skip the wait, save time. Choose your service and barber. Convenience at your fingertips.</p>
+            </div>
+        </div>
+
+        <div class="background3">
+            <div class="background3-content">
+                <img src="img/block3.png" alt="Barber Shop">
+                <div class="background3-text">
+                    <h1>WHAT SETS US APART?</h1>
+                    <p>At Barber Revolution, we blend tradition with modern style. Our skilled barbers craft every cut with precision, using time-honored techniques. Step into our shop and experience a legacy of grooming excellence that's been perfected since 1980.</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="background4">
+            <div class="background4-content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4966.004276859!2d-0.14072427958719783!3d51.51317676372679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d49f4b7f9b%3A0xe44e57cc537e5dd2!2sSoho%2C%20London%2C%20UK!5e0!3m2!1sen!2sru!4v1742991358102!5m2!1sen!2sru" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="background4-text">
+                    <h1>VISIT US TODAY!</h1>
+                    <p>Ready for a fresh cut? Visit Barber Revolution in the heart of the city. Find us easily and book your appointment today!</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h2>PHONE: </h2>
+                            <p>XXX-XXX-XXXX</p>
+                        </div>
+                        <div class="contact-item">
+                            <h2>FAX: </h2>
+                            <p>XX-XXX-XXXX</p>
+                        </div>
+                        <div class="contact-item">
+                            <h2>EMAIL: </h2>
+                            <p>XXX@XXX.COM</p>
+                        </div>
+                        <div class="contact-item">
+                            <h2>ADDRESS: </h2>
+                            <p>123 BARBER STREET, CITY, STATE 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-copyright">COPYRIGHT BY BARBER REVOLUTION</p>
+            <nav class="footer-links">
+                <a href="#">CONTACT</a>
+                <a href="#">ABOUT</a>
+                <a href="#">PRIVACY POLICY</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const header = document.querySelector('header');
+            
+            burgerMenu.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                header.classList.toggle('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>
