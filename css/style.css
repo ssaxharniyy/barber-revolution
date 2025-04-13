@@ -170,7 +170,7 @@ nav a:hover {
 .background1 {
     height: 50vh;
     width: 100%;
-    background-image: url("img/background1.png");
+    background-image: url("../img/background1.png");
     background-size: cover;
     background-position: center;
     margin-top: 70px;
@@ -464,7 +464,7 @@ nav a:hover {
 /* Background4 Section */
 .background4 {
     width: 100%;
-    background-image: url("img/background4.jpg");
+    background-image: url("../img/background4.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
